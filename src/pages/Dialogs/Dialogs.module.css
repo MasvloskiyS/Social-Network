@@ -1,0 +1,29 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    min-height: 90vh;
+}
+.dialogsList {
+    padding-top: 30px;
+    box-shadow: 10px 0px 90px 0 rgba(54,54,24,0.1);
+    background-color: #fff;
+}
+.dialogsListItem {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    text-decoration: none;
+    transition: all .25s;
+}
+.dialogsListItem.active {
+    background-color: #ececec;
+    box-shadow: 0px 3px 10px 0 rgba(200, 200, 200, 0.3);
+}
+.dialogsListItem .userAvatar{
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}

@@ -1,0 +1,22 @@
+.messages {
+    padding: 30px;
+}
+.messages {
+    margin: 15px;
+}
+
+.message {
+    max-width: 40%;
+    background-color: aliceblue;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+.incomingMessage {
+    margin: 0 auto 10px 0;
+    background-color: #8feeff;
+}
+
+.outgoingMessage {
+    margin: 0 0 10px auto;
+    background-color: aquamarine;
+}

@@ -1,0 +1,28 @@
+.sidebarfriendsList {
+    padding: 10px 20px 15px 20px;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+
+}
+.friendListItem {
+    display: grid;
+    text-align: center;
+}
+.friendListItem img {
+    width: 46px;
+    height: 46px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 14px;
+    justify-self: center;
+}
+.friendListItem  {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.friendListItem small {
+    font-size: 10px;
+    color: #ececec;
+}

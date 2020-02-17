@@ -1,0 +1,13 @@
+.header {
+    display: grid;
+    grid-area: header;
+    background: #111f2e;
+    padding: 0 10px;
+    align-items: center;
+}
+.header img {
+    display: block;
+    width: auto;
+    max-height: 80%;
+    margin-left: 1%;
+}

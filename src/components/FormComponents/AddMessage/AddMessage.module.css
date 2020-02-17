@@ -1,0 +1,34 @@
+.formGroup {
+    margin-bottom: 30px;
+}
+.formGroup textarea{
+    display: block;
+    resize: none;
+    width: 100%;
+    height: 90px;
+    border: 1px solid #dad8d9;
+    border-radius: 5px;
+}
+.formGroup button {
+    display: block;
+    border-radius: 5px;
+    background-color: #38096c;
+    color: #fff;
+    margin: 10px 0 10px auto;
+    padding: 0;
+    font-size: 1rem;
+    padding: 0.3em 1em;
+    text-transform: uppercase;
+    border: none;
+}
+.formGroup.textarea {
+    display: flex;
+    margin-top: 40px;
+}
+.formGroup.textarea textarea {
+    margin-right: 15px;
+    height: 40px;
+}
+.formGroup.textarea button {
+    margin: 0;
+}

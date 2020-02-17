@@ -1,0 +1,11 @@
+.post {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 70px 11fr;
+    align-items: center;
+}
+.post .avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
