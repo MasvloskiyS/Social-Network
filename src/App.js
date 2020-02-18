@@ -6,6 +6,7 @@ import Profile from "./pages/Profile/Profile";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import SidebarContainer from "./components/Sidebar/SidebarContainer";
 import DialogsContainer from "./pages/Dialogs/DialogsContainer";
+import {UsersContainer} from "./pages/Users/UsersContainer";
 
 const App = (props) => {
     return (
@@ -16,6 +17,7 @@ const App = (props) => {
                 <Switch>
                     <Route path={'/profile'} render={ () => <Profile />} />
                     <Route path={'/dialogs'} render={ () => <DialogsContainer /> }/>
+                    <Route path={'/users'} render={ () => <UsersContainer /> }/>
                 </Switch>
             </div>
         </BrowserRouter>

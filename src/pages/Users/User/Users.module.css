@@ -1,0 +1,70 @@
+.mainContent {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows:  minmax(100px, 105px) repeat(auto-fill, 105px);
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+    grid-gap: 20px;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+
+.user {
+    display: grid;
+    grid-template-areas: "avatar info";
+    grid-template-columns: 2fr 10fr;
+    background-color: #fff;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.avatarBlock {
+    grid-area: avatar;
+    align-self: center;
+}
+.btn {
+    display: inline-block;
+    height: 26px;
+    width: 76px;
+    line-height: 20px;
+    background-color: #2bae53;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.btn.unfollow {
+    background-color: gray;
+}
+.userInfo {
+    grid-area: info;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px
+}
+.location {
+    text-align: right;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 4px
+}
+.activity {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.avatarBlock img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+}

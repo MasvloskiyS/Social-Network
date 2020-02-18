@@ -5,6 +5,7 @@ let initialState = {
             {name: 'Dialogs', path: '/dialogs'},
             {name: 'News', path: '/news'},
             {name: 'Settings', path: '/settings'},
+            {name: 'Find User', path: '/users'},
         ]
     },
 };

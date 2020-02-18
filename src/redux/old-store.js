@@ -7,7 +7,7 @@ const UPDATE_NEW_POST_TEXT = 'UPDATE_NEW_POST_TEXT';
 const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE_NEW_MESSAGE_TEXT';
 const ADD_MESSAGE = 'ADD_MESSAGE';
 
-let store = {
+let oldStore = {
     _state: {
         myInfo: {
             name: 'Serhii',
@@ -125,4 +125,4 @@ let store = {
 
 
 
-export default store;
+export default oldStore;

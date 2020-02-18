@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "avatarUrl": "https://icocnews.ru/wp-content/uploads/2017/10/satana.jpg",
+      "name": "Stanislav",
+      "activity": "Wordpress Developer",
+      "location": {
+        "country": "Ukraine",
+        "city": "Kamianets-Podilskiy"
+      },
+      "followed": true
+    }, {
+      "id": 2,
+      "avatarUrl": "https://icocnews.ru/wp-content/uploads/2017/10/satana.jpg",
+      "name": "Denis",
+      "activity": "Junior Frontend Developer",
+      "location": {
+        "country": "Ukraine",
+        "city": "Kamianets-Podilskiy"
+      },
+      "followed": false
+    }, {
+      "id": 3,
+      "avatarUrl": "https://icocnews.ru/wp-content/uploads/2017/10/satana.jpg",
+      "name": "Ivanna",
+      "activity": "UI/UX Designer",
+      "location": {
+        "country": "Ukraine",
+        "city": "Lviv"
+      },
+      "followed": true
+    }
+  ]
+}
