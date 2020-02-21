@@ -10,7 +10,8 @@
         "city": "Kamianets-Podilskiy"
       },
       "followed": true
-    }, {
+    },
+    {
       "id": 2,
       "avatarUrl": "https://icocnews.ru/wp-content/uploads/2017/10/satana.jpg",
       "name": "Denis",
@@ -20,7 +21,8 @@
         "city": "Kamianets-Podilskiy"
       },
       "followed": false
-    }, {
+    },
+    {
       "id": 3,
       "avatarUrl": "https://icocnews.ru/wp-content/uploads/2017/10/satana.jpg",
       "name": "Ivanna",
@@ -28,6 +30,105 @@
       "location": {
         "country": "Ukraine",
         "city": "Lviv"
+      },
+      "followed": true
+    },
+    {
+      "id": 4,
+      "avatarUrl": "https://icocnews.ru/wp-content/uploads/2017/10/satana.jpg",
+      "name": "Serhii",
+      "activity": "React Developer",
+      "location": {
+        "country": "Ukraine",
+        "city": "Lviv"
+      },
+      "followed": true
+    },
+    {
+      "id": 5,
+      "avatarUrl": "https://icocnews.ru/wp-content/uploads/2017/10/satana.jpg",
+      "name": "Kostya",
+      "activity": "Recruter",
+      "location": {
+        "country": "Ukraine",
+        "city": "Hmelnitskiy"
+      },
+      "followed": true
+    },
+    {
+      "id": 6,
+      "avatarUrl": "https://icocnews.ru/wp-content/uploads/2017/10/satana.jpg",
+      "name": "Lena",
+      "activity": "Photograph",
+      "location": {
+        "country": "Ukraine",
+        "city": "Hmelnitskiy"
+      },
+      "followed": true
+    },
+    {
+      "id":7,
+      "avatarUrl": "https://icocnews.ru/wp-content/uploads/2017/10/satana.jpg",
+      "name": "Stanislav Rumar",
+      "activity": "Wordpress Developer",
+      "location": {
+        "country": "Ukraine",
+        "city": "Kamianets-Podilskiy"
+      },
+      "followed": true
+    },
+    {
+      "id": 8,
+      "avatarUrl": "https://icocnews.ru/wp-content/uploads/2017/10/satana.jpg",
+      "name": "Denis Boiko",
+      "activity": "Junior Frontend Developer",
+      "location": {
+        "country": "Ukraine",
+        "city": "Kamianets-Podilskiy"
+      },
+      "followed": false
+    },
+    {
+      "id": 9,
+      "avatarUrl": "https://icocnews.ru/wp-content/uploads/2017/10/satana.jpg",
+      "name": "Ivanna Korniyuik",
+      "activity": "UI/UX Designer",
+      "location": {
+        "country": "Ukraine",
+        "city": "Lviv"
+      },
+      "followed": true
+    },
+    {
+      "id": 10,
+      "avatarUrl": "https://icocnews.ru/wp-content/uploads/2017/10/satana.jpg",
+      "name": "Serhii",
+      "activity": "React Developer",
+      "location": {
+        "country": "Ukraine",
+        "city": "Lviv"
+      },
+      "followed": true
+    },
+    {
+      "id": 11,
+      "avatarUrl": "https://icocnews.ru/wp-content/uploads/2017/10/satana.jpg",
+      "name": "Kostya Sichkar",
+      "activity": "Recruter",
+      "location": {
+        "country": "Ukraine",
+        "city": "Hmelnitskiy"
+      },
+      "followed": true
+    },
+    {
+      "id": 12,
+      "avatarUrl": "https://icocnews.ru/wp-content/uploads/2017/10/satana.jpg",
+      "name": "Igor Step4uk",
+      "activity": "Driver",
+      "location": {
+        "country": "Ukraine",
+        "city": "Hmelnitskiy"
       },
       "followed": true
     }
