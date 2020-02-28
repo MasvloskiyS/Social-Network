@@ -7,6 +7,6 @@
   grid-template-columns: 2fr 10fr;
   grid-template-areas: "header header header"
                         "sidebar main main";
-background-color:#f1f1f1;
+  background-color:#f1f1f1;
     grid-column-gap: 20px;
 }

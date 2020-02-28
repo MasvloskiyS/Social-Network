@@ -1,13 +1,16 @@
 .mainContent {
     grid-area: main;
+    position: relative;
+}
+.users {
+    grid-area: users;
     display: grid;
     grid-template-columns: 6fr 6fr;
-    grid-template-rows:  minmax(100px, 105px) repeat(auto-fill, 105px);
     grid-column-gap: 30px;
     grid-row-gap: 20px;
-    grid-gap: 20px;
     padding-top: 40px;
-    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-right: 17px;
 }
 
 .user {
@@ -15,15 +18,17 @@
     grid-template-areas: "avatar info";
     grid-template-columns: 2fr 10fr;
     background-color: #fff;
-    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
     padding: 10px 15px;
     border-radius: 10px;
     position: relative;
 }
+
 .avatarBlock {
     grid-area: avatar;
     align-self: center;
 }
+
 .btn {
     display: inline-block;
     height: 26px;
@@ -38,15 +43,36 @@
     bottom: 10px;
     cursor: pointer;
 }
+
 .btn.unfollow {
     background-color: gray;
 }
+
+.showMoreBtn {
+    display: grid;
+    padding: 11px 20px 11px;
+    background-color: #111f2e;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    margin: 0 auto;
+    grid-area: showmorebtn;
+    position: relative;
+    right: 8px;
+    cursor: pointer;
+    transition: all .25s;
+}
+.showMoreBtn:hover {
+    background-color: #0a4345;
+}
+
 .userInfo {
     grid-area: info;
     display: flex;
     justify-content: space-between;
     padding-top: 5px
 }
+
 .location {
     text-align: right;
 }
@@ -56,6 +82,7 @@
     font-weight: bold;
     margin-bottom: 4px
 }
+
 .activity {
     font-size: 16px;
     line-height: 26px;

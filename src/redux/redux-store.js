@@ -5,6 +5,7 @@ import {sidebarReducer} from "./sidebarReducer";
 import {friendsReducer} from "./friendsReducer";
 import {myInfoReducer} from "./myInfoReducer";
 import {usersReducer} from "./usersReducer";
+import {preloaderReducer} from "./preloaderReducer";
 
 
 let reducers = combineReducers(
@@ -15,6 +16,7 @@ let reducers = combineReducers(
         sidebar: sidebarReducer,
         friends: friendsReducer,
         usersPage: usersReducer,
+        preloader: preloaderReducer,
     }
 );
 

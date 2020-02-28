@@ -6,7 +6,7 @@ import Profile from "./pages/Profile/Profile";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import SidebarContainer from "./components/Sidebar/SidebarContainer";
 import DialogsContainer from "./pages/Dialogs/DialogsContainer";
-import {UsersContainer} from "./pages/Users/UsersContainer";
+import UsersContainer from "./pages/Users/UsersContainer";
 
 const App = (props) => {
     return (

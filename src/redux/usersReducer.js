@@ -3,7 +3,7 @@ const SET_USERS = 'SET_USERS';
 const SHOW_MORE_USERS = 'SHOW_MORE_USERS';
 
 let initialState = {
-    userStartCount: 1,
+    userStartCount: 4,
     users: [ ],
 };
 export const usersReducer = (state = initialState, action) => {
@@ -25,9 +25,10 @@ export const usersReducer = (state = initialState, action) => {
             }
         } case SHOW_MORE_USERS: {
             let increaseNumber = action.increaseNumber;
+            let userStartCount = state.userStartCount;
             return {
                 ...state,
-                userStartCount: this + increaseNumber,
+                userStartCount: userStartCount + increaseNumber,
             }
         }
         default:
@@ -35,6 +36,6 @@ export const usersReducer = (state = initialState, action) => {
     }
 
 };
-export const showMoreUsersAC = (increaseNumber) => ({type: SHOW_MORE_USERS, increaseNumber});
-export const followStatusAC = (userId) => ({type: FOLLOW_STATUS, userId});
-export const setUsersAC = (users) => ({type: SET_USERS, users});
+export const showMoreUsers = (increaseNumber) => ({type: SHOW_MORE_USERS, increaseNumber});
+export const followStatus = (userId) => ({type: FOLLOW_STATUS, userId});
+export const setUsers = (users) => ({type: SET_USERS, users});
