@@ -4,24 +4,24 @@ import React, {Fragment} from "react";
 import axios from "axios";
 import {setPreloader} from "../../redux/preloaderReducer";
 import {followStatus, setUsers, showMoreUsers} from "../../redux/usersReducer";
+import {getMoreUsers, getUsers} from '../../api/api'
 
 class UsersContainer extends React.Component {
 
     componentDidMount() {
 
 
-        axios.get('https://my-json-server.typicode.com/MasvloskiyS/Social-Network/users')
-            .then(users => {
+        getUsers().then(users => {
                 this.props.setPreloader();
                 const displayedUsers = [];
 
-                if (users.data.length > this.props.userStartCount) {
-                    for (let i = 0; i < this.props.userStartCount; i++) {
-                        displayedUsers[i] = users.data[i];
+                if (users.length > this.props.usersCount) {
+                    for (let i = 0; i < this.props.usersCount; i++) {
+                        displayedUsers[i] = users[i];
                     }
                 } else {
-                    for (let i = 0; i < users.data.length; i++) {
-                        displayedUsers[i] = users.data[i];
+                    for (let i = 0; i < users.length; i++) {
+                        displayedUsers[i] = users[i];
                     }
                 }
                 this.props.setUsers(displayedUsers);
@@ -29,23 +29,24 @@ class UsersContainer extends React.Component {
             });
         this.props.setPreloader();
 
-
     }
 
     showMoreUsers = () => {
 
-        axios.get('https://my-json-server.typicode.com/MasvloskiyS/Social-Network/users')
-            .then(users => {
+        const increaseNumber = 8;
+
+        this.props.showMoreUsers(increaseNumber);
+
+        getMoreUsers(increaseNumber + this.props.usersCount).then(users => {
                 this.props.setPreloader();
-                this.props.showMoreUsers(4);
                 const displayedUsers = [];
-                if (users.data.length > this.props.userStartCount) {
-                    for (let i = 0; i < this.props.userStartCount; i++) {
-                        displayedUsers[i] = users.data[i];
+                if (users.length > this.props.usersCount) {
+                    for (let i = 0; i < this.props.usersCount; i++) {
+                        displayedUsers[i] = users[i];
                     }
                 } else {
-                    for (let i = 0; i < users.data.length; i++) {
-                        displayedUsers[i] = users.data[i];
+                    for (let i = 0; i < users.length; i++) {
+                        displayedUsers[i] = users[i];
                     }
                 }
                 this.props.setUsers(displayedUsers);
@@ -55,10 +56,9 @@ class UsersContainer extends React.Component {
 
     render() {
         return <Users users={this.props.users}
-                   showMoreUsers={this.showMoreUsers}
+                      showMoreUsers={this.showMoreUsers}
                       preloader={this.props.preloader}
-                   userStartCount={this.props.userStartCount}
-                   changeFollowStatus={this.props.followStatus}
+                      changeFollowStatus={this.props.followStatus}
             />
 
     }
@@ -67,8 +67,9 @@ class UsersContainer extends React.Component {
 let mapStateToProps = (state) => {
     return {
         users: state.usersPage.users,
-        userStartCount: state.usersPage.userStartCount,
-        preloader: state.preloader.preloader
+        usersCount: state.usersPage.usersCount,
+        preloader: state.preloader.preloader,
+        followStatus: state.usersPage.followStatus,
     }
 };
 export default connect(mapStateToProps, {followStatus, setUsers, showMoreUsers, setPreloader} )(UsersContainer);

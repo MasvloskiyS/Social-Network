@@ -3,7 +3,7 @@ const SET_USERS = 'SET_USERS';
 const SHOW_MORE_USERS = 'SHOW_MORE_USERS';
 
 let initialState = {
-    userStartCount: 4,
+    usersCount: 8,
     users: [ ],
 };
 export const usersReducer = (state = initialState, action) => {
@@ -25,10 +25,10 @@ export const usersReducer = (state = initialState, action) => {
             }
         } case SHOW_MORE_USERS: {
             let increaseNumber = action.increaseNumber;
-            let userStartCount = state.userStartCount;
+            let usersPreviousCount = state.usersCount;
             return {
                 ...state,
-                userStartCount: userStartCount + increaseNumber,
+                usersCount: usersPreviousCount + increaseNumber,
             }
         }
         default:
