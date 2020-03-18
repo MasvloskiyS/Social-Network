@@ -2,18 +2,20 @@ import React from "react";
 import classes from './Users.module.css'
 import {NavLink} from "react-router-dom";
 import avaPlaceholder from "../../../assets/img/ava-placeholder.png"
+import {usersAPI} from "../../../api/api";
 
 const User = (props) => {
+
     let onChangeFollowStatus = () => {
-        props.changeFollowStatus(props.id);
-    };
+            props.toggleFollowStatus(props.id, props.followed);
+    }
     return (
         <div className={classes.user}>
             <div className={classes.avatarBlock}>
                 <NavLink to={`/profile/${props.id}`}>
-                    <img src={props.photos.small ? props.photos.small :  avaPlaceholder } alt={props.name}/>
+                    <img src={props.photos.small ? props.photos.small : avaPlaceholder} alt={props.name}/>
                 </NavLink>
-                <button className={classes.btn + ' ' + (props.followed ? classes.follow : classes.unfollow)}
+                <button disabled={props.followingInProgress}  className={classes.btn + ' ' + (props.followed ? classes.follow : classes.unfollow)}
                         onClick={onChangeFollowStatus}>
                     {props.followed ? 'Follow' : 'Unfollow'}
                 </button>

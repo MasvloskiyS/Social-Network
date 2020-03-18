@@ -2,6 +2,7 @@ import React, {Fragment} from 'react';
 import classes from './User/Users.module.css';
 import User from "./User/User";
 import Preloader from "../../components/Preloader/Preloader";
+import {toggleFollowStatus} from "../../redux/usersReducer";
 
 const Users = (props) => {
     let user = props.users.map(user => {
@@ -10,7 +11,7 @@ const Users = (props) => {
                   photos={user.photos}
                   id={user.id}
                   followed={user.followed}
-                  changeFollowStatus={props.changeFollowStatus}
+                  toggleFollowStatus={props.toggleFollowStatus}
             />
         }
     );

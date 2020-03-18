@@ -4,6 +4,7 @@
     background: #111f2e;
     padding: 0 10px;
     align-items: center;
+    grid-template-columns: 11fr 1fr;
 }
 .header img {
     display: block;
